@@ -1,9 +1,9 @@
 /* GLOBAL STYLES
--------------------------------------------------- */
+	-------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 /*every div element is contained in this container*/
 /*  THE NAVBAR
--------------------------------------------------- */
+	-------------------------------------------------- */
 /*-- Create equal columns that sits next to each other --*/
 /*--------images and description of menu-----------------------*/
 /*---------------------------button---------------------------*/
@@ -25,7 +25,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  display: -webkit-flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -132,7 +131,7 @@ button {
   margin: 0 auto;
   width: 350px;
   -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
+          transition-duration: 0.4s;
 }
 
 button:hover {
@@ -167,7 +166,7 @@ button:hover {
 .contacts {
   float: right;
   padding-right: 10px;
-  font: 18px/1.5 Verdana, Helvetica, Arial, sans-serif;
+  font-family: 18px/1.5 Verdana, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 17px;
   color: #fffbfc;
