@@ -1,0 +1,196 @@
+
+    $colors: (
+		color_1: #5a5a5a,
+		color_2: #f2f2f2,
+		color_3: black,
+		color_4: white,
+		color_5: #ff0000,
+		color_6: #faf9f9,
+		color_7: #fff,
+		color_8: #fffbfc,
+		background_color_1: #2d2d30,
+		background_color_2: #ddd,
+		background_color_3: rgba(0,0,0,0.5),
+		background_color_4: #5aafde,
+		background_color_5: #006200,
+	);
+	
+		$font_family_1: 14px/1.5 Verdana, Helvetica, Arial, sans-serif;
+	
+	/* GLOBAL STYLES
+	-------------------------------------------------- */
+	/* Padding below the footer and lighter body text */
+	/*every div element is contained in this container*/
+	/*  THE NAVBAR
+	-------------------------------------------------- */
+	/*-- Create equal columns that sits next to each other --*/
+	/*--------images and description of menu-----------------------*/
+	/*---------------------------button---------------------------*/
+	/*----------------------Footer-------------------------------*/
+	body {
+		height: auto;
+		margin: 0 40px 40px 40px;
+		color: map-get($colors,color_1);
+		font-family: $font_family_1;
+	}
+	
+	.container {
+		width: 100%;
+	}
+	
+	.menuBar {
+		overflow: hidden;
+		background-color: map-get($colors, background_color_1);
+		display: flex;
+		justify-content: center;
+		margin: 0;
+		width: 100%;
+		a
+	
+	{
+		float: left;
+		display: block;
+		color: map-get($colors,color_2);
+		text-align: center;
+		padding: 14px 20px;
+		text-decoration: none;
+		font-size: 20px;
+		&:hover
+	
+	{
+		background-color: map-get($colors, background_color_2);
+		color: map-get($colors,color_3);
+	}
+	
+	}
+	
+	.icon {
+		display: none;
+	}
+	
+	}
+	
+	* {
+		box-sizing: border-box;
+	}
+	
+	.row {
+		display: flex;
+		max-height: 190px;
+	}
+	
+	.column {
+		flex: 33.33%;
+		width: 100%;
+		.shadow
+	
+	{
+		max-height: 190px;
+		display: flex;
+		z-index: 4;
+		border-radius: 2px;
+		background-color: $background_color_3;
+		box-shadow: 0px 0px 15px 2px rgba(255,255,255,.75);
+	}
+	
+	&:hover {
+		.shadow
+	
+	{
+		transform: scale(1);
+		border: 0.2em solid red;
+	}
+	
+	}
+	}
+	
+	.shadow {
+		transition: all 0.7s ease;
+	}
+	.menu-area {
+		height: 550px;
+		display: inline-flex;
+		.menu
+	
+	{
+		text-align: center;
+		width: 100%;
+		display: block;
+	}
+	
+	}
+	
+	.textarea {
+		width: 100%;
+		height: 200px;
+		text-align: center;
+		display: block;
+		.textBox
+	
+	{
+		text-align: center;
+		padding-top: 0px;
+		font-size: 16px;
+	}
+	
+	}
+	
+	button {
+		background-color: map-get($colors, background_color_4);
+		border: none;
+		border-radius: 5px;
+		color: map-get($colors, color_4);
+		padding: 5px;
+		text-align: center;
+		text-decoration: none;
+		font-size: 16px;
+		margin: 0 auto;
+		width: 350px;
+		transition-duration: 0.4s;
+		&:hover
+	
+	{
+		background-color: map-get($colors, background_color_5);
+		color: map-get($colors,color_5);
+	}
+	
+	}
+	
+	.legal-links {
+		a
+	
+	{
+		font: 18px/1.5 Verdana, Helvetica, Arial, sans-serif;
+		font-size: 17px;
+		line-height: 17px;
+		color: map-get($colors, color_6);
+		text-transform: none;
+		padding: 20px 15px;
+	}
+	
+	}
+	
+	.fixed-footer {
+		width: 96%;
+		position: fixed;
+		background: map-get($colors, background_color_1);
+		padding: 10px 10px;
+		color: $color_7;
+		overflow: hidden;
+		bottom: 0;
+	}
+	
+	.rights-reserved {
+		float: left;
+		padding-left: 10px;
+	}
+	
+	.contacts {
+		float: right;
+		padding-right: 10px;
+		font-family: 18px/1.5 Verdana, Helvetica, Arial, sans-serif;
+		font-size: 16px;
+		line-height: 17px;
+		color: map-get($colors, color_8);
+		margin: 20px 20px 0 0;
+	}
